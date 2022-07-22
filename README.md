@@ -1,6 +1,8 @@
 # spiffyterm
 My preferred terminal setup for Mac.
 
+<img width="651" alt="screenshotMLP" src="https://user-images.githubusercontent.com/107746699/180394193-4572985a-cb2e-426b-9cde-a8945e6d4462.png">
+
 How to:
   1. Install Homebrew
     Run:  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
