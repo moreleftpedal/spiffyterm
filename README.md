@@ -6,31 +6,31 @@ My preferred terminal setup for Mac.
 How to:
   1. Install Homebrew
   
-    Run:  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
     
     
   2. Install iTerm2
   
-    Run:  brew install --cask iterm2
+    brew install --cask iterm2
     
   3. Install git (if not already installed from xcode tools)
   
-    Run: brew install git
+    brew install git
     
     
   4. Install oh-my-zsh
   
-    Run: sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
     
     
   5. Install the fonts
     
-    Run:  git clone https://github.com/moreleftpedal/spiffyterm
+    git clone https://github.com/moreleftpedal/spiffyterm
     
     
   6. Install the Powerlevel 10K Theme
     
-    Run: git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+    git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
     
     Set the theme on .zshrc file: ZSH_THEME="powerlevel10k/powerlevel10k"
     
@@ -52,7 +52,7 @@ How to:
     
   10. Enable suggestions
     
-    Clone:  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     
     Add plugin to .zshrc file: plugins=(zsh-autosuggestions)
     
@@ -62,4 +62,46 @@ How to:
     Update terminal.integrated.fontFamily setting to 'MesloLGS NF'
     
     
-  Enjoy!  
+Steps for install in Ubuntu Desktop:  I suggest following this tutorial:  https://www.youtube.com/watch?v=PZTLIVQxxEY
+
+
+Steps for Ubuntu Server:
+
+  1. Install ZSH
+  
+    sudo apt install zsh
+ 
+ 
+  2. Switch to ZSH as your default shell. 
+  
+    Check your current shell:  echo $0
+    Switch to ZSH:  chsh 
+    Type: /bin/zsh
+    Logout and Login for changes to take effect.  
+    Now run through configuration on first start up. I suggest using option 2.  
+  
+  
+  3. Install oh-my-zsh
+  
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+  
+  
+  4. Install the Powerlevel 10K Theme
+    
+    git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+    
+    Set the theme on .zshrc file: ZSH_THEME="powerlevel10k/powerlevel10k"
+  
+    
+  5. Configure PowerLevel10K
+    
+    Re-lauch a terminal and follow promts.  
+    
+    
+  6. Enable suggestions
+    
+    git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+    
+    Add plugin to .zshrc file: plugins=(zsh-autosuggestions)
+    
+
